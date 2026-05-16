@@ -62,5 +62,13 @@ def contacto():
     )
 
 
+@app.route("/sitemap.xml")
+def sitemap():
+    import os
+    from flask import send_from_directory
+
+    return send_from_directory(os.getcwd(), "sitemap.xml")
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
