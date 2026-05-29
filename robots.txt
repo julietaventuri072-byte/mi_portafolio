@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wenatelier-flowdata.vercel.app/sitemap.xml
