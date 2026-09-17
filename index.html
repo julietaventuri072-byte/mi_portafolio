@@ -2,344 +2,718 @@
 <html lang="es">
 
 <head>
-       
     <meta charset="UTF-8">
-       
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Wen Atelier & FlowData Pro | Marketing y Automatización</title>
-       
-    <meta name="description"        
-        content="Eliminamos la fricción de tu negocio. Creamos embudos de venta estéticos y programamos sistemas en Python para automatizar tu operación.">
-       
-    <meta name="keywords" content="Wen Atelier, FlowData, automatizacion, python, marketing digital, embudos de venta">
+    <!-- SEO GLOBAL Y MULTILINGÜE -->
+    <title>Wen Atelier Studio | Diseño Visual, Branding y Estrategia Digital para Clínicas y Médicos</title>
+    <meta name="description"
+        content="Transformamos la imagen de marcas, clínicas y especialistas en Miami, Orlando, Florida y el mundo. Diseño visual premium, identidad corporativa, marketing internacional y contenido bilingüe (EN/ES) de alto impacto.">
+    <meta name="keywords"
+        content="Wen Atelier Studio, branding médico, diseño visual clínicas, marketing digital internacional, branding veterinarias, diseño premium florida, miami, orlando, latam, global agency, branding de salud, consultorios médicos">
+    <meta name="author" content="Wen Atelier Studio">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-       
+    <!-- SEO GEOGRÁFICO Y GLOBAL -->
+    <meta name="geo.region" content="US-FL" />
+    <meta name="geo.placename" content="Florida" />
+    <meta name="geo.position" content="27.664827;-81.515754" />
+    <meta name="ICBM" content="27.664827, -81.515754" />
+
+    <!-- OPEN GRAPH (Para compartir en Redes Sociales) -->
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wen Atelier Studio | Diseño Visual y Estrategia de Marca Global">
+    <meta property="og:description"
+        content="Diseño visual, branding premium e identidad de marca internacional para médicos, clínicas y especialistas. Florida (Miami & Orlando) y LATAM.">
+    <meta property="og:url" content="https://wenatelier-studio.vercel.app">
+    <meta property="og:site_name" content="Wen Atelier Studio">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Google Site Verification -->
     <meta name="google-site-verification" content="qIigjDQcvXcEGk74fgcvUGwKG5hIQgCB4ktbDQqEH5E" />
 
-       
+    <!-- CDN DE TAILWIND CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#9333EA',
+                            lightPurple: '#C084FC',
+                            pink: '#EC4899',
+                            dark: '#07080E',
+                            card: '#11121A'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
-       
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        <style>
-        /* Animación sutil para el fondo y elementos clave */
+    <!-- Datos estructurados (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DesignAgency",
+      "name": "Wen Atelier Studio",
+      "alternateName": "Wen Atelier",
+      "url": "https://wenatelier-studio.vercel.app",
+      "logo": "https://wenatelier-studio.vercel.app/favicon.ico",
+      "description": "Estudio global de diseño visual, branding y estrategia digital para el sector de la salud, medicina y veterinarias en Florida y Latinoamérica.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Miami",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.instagram.com/wenatelierstudio/"
+      ],
+      "knowsAbout": [
+        "Graphic Design",
+        "Medical Branding",
+        "Healthcare Marketing",
+        "Bilingual Content Strategy",
+        "Web Design"
+      ]
+    }
+    </script>
+
+    <style>
         .glow-effect {
-            box-shadow: 0 0 50px -10px rgba(147, 51, 234, 0.15);
+            box-shadow: 0 0 60px -15px rgba(147, 51, 234, 0.25);
         }
 
-        .glow-effect-blue {
-            box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.15);
+        .glow-pink {
+            box-shadow: 0 0 60px -15px rgba(236, 72, 153, 0.15);
+        }
+
+        /* Ocultar barra de desplazamiento en los carruseles */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 </head>
 
 <body class="bg-gray-950 text-gray-100 font-sans selection:bg-purple-600 selection:text-white antialiased">
 
-        <nav class="border-b border-gray-900 bg-gray-950/80 backdrop-blur sticky top-0 z-50">
-                <div class="p-6 max-w-7xl mx-auto flex justify-between items-center">
-                        <div class="text-xl md:text-2xl font-bold tracking-wide flex items-center gap-2">
-                                <span class="text-purple-400 font-light tracking-tight">Wen</span>Atelier
-                                <span class="text-gray-700 font-normal">|</span>
-                                <span class="text-blue-500 font-black">FlowData</span><span                    
-                    class="text-white font-light text-sm">Pro</span>
-                            </div>
-                        <div class="space-x-6 hidden sm:block">
-                                <a href="#soluciones"
-                    class="hover:text-purple-400 transition text-sm font-medium">Soluciones</a>
-                                <a href="#metodo" class="hover:text-blue-400 transition text-sm font-medium">Método</a>
-                                <a href="#contacto"                    
-                    class="bg-gradient-to-r from-purple-600 to-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition shadow-lg shadow-purple-900/20">Contactar</a>
-                            </div>
-                    </div>
-            </nav>
+    <!-- Navegación -->
+    <nav class="border-b border-gray-900 bg-gray-950/80 backdrop-blur sticky top-0 z-50">
+        <div class="p-6 max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-bold tracking-wide flex items-center gap-2">
+                <span class="text-purple-400 font-light tracking-tight">Wen</span>Atelier <span
+                    class="text-xs text-pink-400 font-mono uppercase bg-purple-950 border border-purple-500/20 px-2 py-0.5 rounded">Studio</span>
+            </div>
+            <div class="space-x-6 hidden sm:block">
+                <a href="#portafolio" class="hover:text-purple-400 transition text-sm font-medium">Portafolio Global</a>
+                <a href="#soluciones" class="hover:text-purple-400 transition text-sm font-medium">Soluciones</a>
+                <a href="#ventajas" class="hover:text-purple-400 transition text-sm font-medium">Ventajas</a>
+                <a href="#testimonios" class="hover:text-purple-400 transition text-sm font-medium">Testimonios</a>
+                <a href="https://wa.me/50764371369?text=Hola%20chicas%2C%20vi%20su%20web%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20para%20el%20dise%C3%B1o%20de%20mi%20cl%C3%ADnica%2Fveterinaria%20en%20Florida."
+                    target="_blank" rel="noopener noreferrer"
+                    class="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition shadow-lg shadow-purple-900/20">
+                    Probar Rediseño Gratuito
+                </a>
+            </div>
+        </div>
+    </nav>
 
-        <header class="max-w-5xl mx-auto text-center py-28 px-4 relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-blue-500/5 blur-3xl -z-10"></div>
+    <!-- Hero Section -->
+    <header class="max-w-5xl mx-auto text-center py-28 px-4 relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 blur-3xl -z-10"></div>
 
-                <div            
-            class="inline-flex items-center gap-2 px-4 py-1.5 bg-gray-900/80 border border-gray-800 rounded-full text-xs font-medium text-gray-400 mb-8 backdrop-blur">
-                        <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span> Estrategia de Marca
-                        <span class="text-gray-600">+</span>
-                        <span class="w-2 h-2 rounded-full bg-blue-400"></span> Código e Ingeniería
-                    </div>
+        <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 bg-gray-900/80 border border-gray-800 rounded-full text-xs font-medium text-purple-300 mb-8 backdrop-blur">
+            <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span> Alcance Global • Florida (Miami &
+            Orlando) + LATAM • bilingüe EN / ES
+        </div>
 
-                <h1 class="text-5xl md:text-7xl font-black mb-8 tracking-tight leading-none text-white">
-                        Diseñamos tu <span                
-                class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500">Marketing</span><br>
-                        y automatizamos tu <span                
-                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-teal-400 to-blue-500">Operación</span>
-                    </h1>
+        <h1 class="text-5xl md:text-7xl font-black mb-8 tracking-tight leading-none text-white">
+            Diseño Visual y Estrategia Digital para <br><span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500">Clínicas,
+                Médicos y Veterinarias</span> en Florida y el Mundo.
+        </h1>
 
-                <p class="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-                        Eliminamos la fricción de tu negocio. Creamos embudos de venta estéticos y programamos sistemas
-            en Python
-                        para que tu infraestructura comercial corra en piloto automático.
-                    </p>
+        <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
+            Transformamos la identidad y el posicionamiento de tu consulta en Miami, Orlando, o cualquier lugar del
+            mundo, para atraer pacientes de alto valor sin que pierdas tu valioso tiempo en la gestión visual.
+        </p>
 
-                <div
-            class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6 w-full max-w-xl mx-auto px-4">
-                        <a href="https://www.instagram.com/wenatelierstudio/" target="_blank"                
-                class="flex items-center justify-center gap-2 w-full sm:w-1/2 border border-purple-500/30 bg-purple-950/10 hover:bg-purple-950/30 px-6 py-4 rounded-xl text-white font-medium transition-all duration-300 hover:scale-[1.02]">
-                                <i class="fab fa-instagram text-pink-500 text-xl"></i>
-                                <span>Wen Atelier</span>
-                            </a>
+        <!-- Botón Principal WhatsApp -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 w-full max-w-xl mx-auto px-4">
+            <a href="https://wa.me/50764371369?text=Hola%20chicas%2C%20vi%20su%20web%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20para%20el%20dise%C3%B1o%20de%20mi%20cl%C3%ADnica%2Fveterinaria%20en%20Florida."
+                target="_blank" rel="noopener noreferrer"
+                class="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 px-8 py-4 rounded-xl text-white font-bold transition-all duration-300 hover:scale-[1.02] shadow-xl shadow-purple-900/30 text-base">
+                <i class="fab fa-whatsapp text-2xl"></i>
+                <span>Solicitar Rediseño de Prueba Gratuito</span>
+            </a>
+        </div>
 
-                        <a href="https://www.instagram.com/flowdata.pro/" target="_blank"                
-                class="flex items-center justify-center gap-2 w-full sm:w-1/2 border border-blue-500/30 bg-blue-950/10 hover:bg-blue-950/30 px-6 py-4 rounded-xl text-white font-medium transition-all duration-300 hover:scale-[1.02]">
-                                <i class="fab fa-instagram text-blue-500 text-xl"></i>
-                                <span>FlowData Pro</span>
-                            </a>
-                    </div>
-            </header>
+        <!-- Botón Instagram Destacado y Visible -->
+        <div class="mt-6 flex justify-center px-4">
+            <a href="https://www.instagram.com/wenatelierstudio/" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-pink-500/10 border border-pink-500/40 hover:border-pink-400 bg-gray-900/80 px-6 py-3.5 rounded-xl text-white font-semibold transition-all duration-300 hover:scale-105 shadow-lg shadow-pink-950/40 backdrop-blur group">
+                <i class="fab fa-instagram text-2xl text-pink-400 group-hover:scale-110 transition-transform"></i>
+                <span class="text-sm md:text-base font-medium tracking-wide">Síguenos en Instagram <strong
+                        class="text-pink-400">@wenatelierstudio</strong></span>
+            </a>
+        </div>
+    </header>
 
-        <section class="w-full max-w-5xl mx-auto px-6 py-16 text-center">
-                <h2 class="text-2xl md:text-3xl font-bold text-white mb-12 tracking-tight">
-                        La diferencia entre un negocio estancado y uno automatizado.
-                    </h2>
+    <!-- PORTAFOLIO: 7 ESPECIALIDADES EN CARRUSELES INDEPENDIENTES -->
+    <section id="portafolio" class="w-full max-w-6xl mx-auto px-6 py-20 border-t border-gray-900">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Diseño de Grado Médico &
+                Veterinario</h2>
+            <p class="text-gray-400 font-light max-w-xl mx-auto">Nuestros proyectos estandarizados y carruseles
+                educativos diseñados para el sector de la salud a escala internacional.</p>
+        </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
-                        <div class="bg-[#12131A] border border-red-500/10 p-8 rounded-2xl flex flex-col gap-4">
-                                <div class="text-2xl">🔴</div>
-                                <h3 class="text-xl font-bold text-white">Operación Manual</h3>
-                                <ul class="space-y-3 text-gray-400 font-light">
-                                        <li class="flex items-center gap-2">⏱️ Pérdida de Leads</li>
-                                        <li class="flex items-center gap-2">📊 Excels manuales</li>
-                                        <li class="flex items-center gap-2">🔍 Revisión manual</li>
-                                    </ul>
-                            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-                        <div
-                class="bg-[#12131A] border border-emerald-500/20 p-8 rounded-2xl flex flex-col gap-4 glow-effect-blue">
-                                <div class="text-2xl">🟢</div>
-                                <h3 class="text-xl font-bold text-white">Flujo Optimizado con FlowData Pro</h3>
-                                <ul class="space-y-3 text-gray-300 font-light">
-                                        <li class="flex items-center gap-2">⚡ Leads respondidos en 3 segundos</li>
-                                        <li class="flex items-center gap-2">🐍 Tableros automatizados con python</li>
-                                        <li class="flex items-center gap-2">🛡️ Revisión mediante bot seguro</li>
-                                    </ul>
-                            </div>
-                    </div>
-            </section>
+            <!-- 1. ARIEL - GINECOLOGÍA Y OBSTETRICIA -->
+            <div
+                class="bg-[#12131A] border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-purple-500/40 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span
+                            class="bg-purple-900/80 text-purple-200 border border-purple-500/30 text-xs px-3 py-1 rounded-full backdrop-blur font-medium">
+                            Ginecología & Obstetricia
+                        </span>
+                        <span class="text-[10px] text-gray-500"><i class="fas fa-hand-pointer mr-1"></i> Desliza</span>
+                    </div>
 
-        <section id="soluciones" class="w-full max-w-5xl mx-auto px-6 py-16 text-center">
-                <h2 class="text-2xl md:text-3xl font-bold text-white mb-12 tracking-tight">
-                        Soluciones de ingeniería y diseño para escalar tu operación
-                    </h2>
+                    <div class="flex gap-3 overflow-x-auto no-scrollbar py-2 mb-4 scroll-smooth snap-x snap-mandatory">
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/ARIEL/1.png" alt="Ariel Ginecología 1" class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/ARIEL/2.png" alt="Ariel Ginecología 2" class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/ARIEL/(3).png" alt="Ariel Ginecología 3" class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/ARIEL/(4).png" alt="Ariel Ginecología 4" class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/ARIEL/(5).png" alt="Ariel Ginecología 5" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
-                        <div                
-                class="bg-[#12131A] border border-gray-800 p-8 rounded-2xl flex flex-col gap-4 hover:border-purple-500/30 transition-all duration-300 hover:scale-[1.01]">
-                                <h3 class="text-xl font-bold text-white">Estrategia de Marca</h3>
-                                <ul class="space-y-3 text-gray-400 font-light">
-                                        <li class="flex items-center gap-2">✨ Identidad visual</li>
-                                        <li class="flex items-center gap-2">🎯 Posicionamiento de marca</li>
-                                        <li class="flex items-center gap-2">📂 Arquitectura de la información</li>
-                                    </ul>
-                            </div>
+                <div>
+                    <h3 class="text-base font-bold text-white mb-1">Obstetricia y Control Prenatal</h3>
+                    <p class="text-xs text-gray-400">Enfoque visual informativo para el acompañamiento de la maternidad.
+                    </p>
+                </div>
+            </div>
 
-                        <div                
-                class="bg-[#12131A] border border-gray-800 p-8 rounded-2xl flex flex-col gap-4 hover:border-blue-500/30 transition-all duration-300 hover:scale-[1.01]">
-                                <h3 class="text-xl font-bold text-white">Embudos de Venta</h3>
-                                <ul class="space-y-3 text-gray-400 font-light">
-                                        <li class="flex items-center gap-2">🚀 Páginas ultra-rápidas</li>
-                                        <li class="flex items-center gap-2">✍️ Diseño persuasivo (Copywriting)</li>
-                                        <li class="flex items-center gap-2">📱 Optimización para móviles</li>
-                                    </ul>
-                            </div>
+            <!-- 2. MICHELLE - GINECOLOGÍA Y SALUD FEMENINA -->
+            <div
+                class="bg-[#12131A] border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-pink-500/40 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span
+                            class="bg-pink-900/80 text-pink-200 border border-pink-500/30 text-xs px-3 py-1 rounded-full backdrop-blur font-medium">
+                            Ginecología Integral
+                        </span>
+                        <span class="text-[10px] text-gray-500"><i class="fas fa-hand-pointer mr-1"></i> Desliza</span>
+                    </div>
 
-                        <div                
-                class="bg-[#12131A] border border-gray-800 p-8 rounded-2xl flex flex-col gap-4 md:col-span-2 hover:border-purple-500/40 transition-all duration-300 hover:scale-[1.005] glow-effect">
-                                <h3 class="text-xl font-bold text-white">Ingeniería de Datos con Python</h3>
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                        <ul class="space-y-3 text-gray-400 font-light">
-                                                <li class="flex items-center gap-2">🔗 Integración de APIs</li>
-                                                <li class="flex items-center gap-2">⚙️ Automatización de CRMs
-                            (HubSpot/Salesforce)</li>
-                                            </ul>
-                                        <ul class="space-y-3 text-gray-400 font-light">
-                                                <li class="flex items-center gap-2">🧹 Scripts de limpieza de datos</li>
-                                                <li class="flex items-center gap-2">🤖 Bots de mensajería</li>
-                                            </ul>
-                                    </div>
-                            </div>
-                    </div>
-            </section>
+                    <div class="flex gap-3 overflow-x-auto no-scrollbar py-2 mb-4 scroll-smooth snap-x snap-mandatory">
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MICHELLE/michelle_01.png" alt="Michelle Ginecología 1"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MICHELLE/michelle_02.png" alt="Michelle Ginecología 2"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MICHELLE/michelle_03.png" alt="Michelle Ginecología 3"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MICHELLE/michelle_04.png" alt="Michelle Ginecología 4"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MICHELLE/michelle_05.png" alt="Michelle Ginecología 5"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MICHELLE/michelle_06.png" alt="Michelle Ginecología 6"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
 
-        <section class="w-full max-w-5xl mx-auto px-6 py-20 text-center">
-                <h2 class="text-2xl md:text-3xl font-bold text-white mb-16 tracking-tight">
-                        Resultados reales para negocios reales
-                    </h2>
+                <div>
+                    <h3 class="text-base font-bold text-white mb-1">Salud Femenina y Prevención</h3>
+                    <p class="text-xs text-gray-400">Línea visual elegante de concientización y conexión con pacientes.
+                    </p>
+                </div>
+            </div>
 
-                <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl mx-auto justify-center items-center text-center">
-                        <div class="flex flex-col items-center gap-2">
-                                <span class="text-5xl md:text-6xl font-extrabold text-white tracking-tight">+10h</span>
-                                <p class="text-sm md:text-base text-gray-400 max-w-xs font-light">Ahorradas por semana
-                    en tareas
-                                        manuales</p>
-                            </div>
+            <!-- 3. JEAN CARLOS - UROLOGÍA -->
+            <div
+                class="bg-[#12131A] border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-purple-500/40 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span
+                            class="bg-purple-900/80 text-purple-200 border border-purple-500/30 text-xs px-3 py-1 rounded-full backdrop-blur font-medium">
+                            Urología
+                        </span>
+                        <span class="text-[10px] text-gray-500"><i class="fas fa-hand-pointer mr-1"></i> Desliza</span>
+                    </div>
 
-                        <div class="flex flex-col items-center gap-2">
-                                <span
-                    class="text-5xl md:text-6xl font-extrabold text-[#A855F7] tracking-tight">24/7</span>
-                                <p class="text-sm md:text-base text-gray-400 max-w-xs font-light">Monitoreo y respuesta
-                    automática de
-                                        leads</p>
-                            </div>
+                    <div class="flex gap-3 overflow-x-auto no-scrollbar py-2 mb-4 scroll-smooth snap-x snap-mandatory">
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/JEAN_CARLOS/JC_01.png" alt="Urología Dr Jean Carlos 1"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/JEAN_CARLOS/JC_02.png" alt="Urología Dr Jean Carlos 2"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/JEAN_CARLOS/JC_03.png" alt="Urología Dr Jean Carlos 3"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/JEAN_CARLOS/JC_04.png" alt="Urología Dr Jean Carlos 4"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/JEAN_CARLOS/JC_05.png" alt="Urología Dr Jean Carlos 5"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="flex flex-col items-center gap-2">
-                                <span class="text-5xl md:text-6xl font-extrabold text-white tracking-tight">100%</span>
-                                <p class="text-sm md:text-base text-gray-400 max-w-xs font-light">De precisión en la
-                    migración de tus
-                                        datos</p>
-                            </div>
-                    </div>
-            </section>
+                <div>
+                    <h3 class="text-base font-bold text-white mb-1">Especialidad en Urología</h3>
+                    <p class="text-xs text-gray-400">Diseño institucional de gran pulcritud sobre salud masculina y
+                        prevención.</p>
+                </div>
+            </div>
 
-        <section class="py-24 bg-gray-900/30 border-t border-gray-900/60">
-                <div class="max-w-6xl mx-auto px-4">
-                        <div class="grid md:grid-cols-2 gap-12">
-                                <div                    
-                    class="p-8 bg-gray-900/60 rounded-2xl border border-purple-500/10 glow-effect relative overflow-hidden">
-                                        <div
-                        class="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-2xl"></div>
-                                        <h3 class="text-2xl font-bold mb-2 text-white">Estrategia & Conversión</h3>
-                                        <p class="text-purple-400 font-medium text-sm mb-6">por Wen Atelier</p>
-                                        <div class="space-y-6">
-                                                <div class="bg-gray-950/40 p-4 rounded-xl border border-gray-800">
-                                                        <h4 class="font-bold text-white mb-1 text-base">Identidad de
-                                Marca & Branding</h4>
-                                                        <p class="text-gray-400 text-xs font-light leading-relaxed">
-                                Diseñamos el ecosistema visual
-                                                                de tu marca para conectar emocionalmente con tu cliente
-                                ideal.</p>
-                                                    </div>
-                                                <div class="bg-gray-950/40 p-4 rounded-xl border border-gray-800">
-                                                        <h4 class="font-bold text-white mb-1 text-base">Embudos de Venta
-                                (Funnels)</h4>
-                                                        <p class="text-gray-400 text-xs font-light leading-relaxed">
-                                Páginas de aterrizaje estéticas
-                                                                optimizadas para la conversión de tráfico en prospectos
-                                reales.</p>
-                                                    </div>
-                                            </div>
-                                    </div>
+            <!-- 4. MARTINEZ - CARDIOLOGÍA -->
+            <div
+                class="bg-[#12131A] border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-red-500/40 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span
+                            class="bg-red-900/80 text-red-200 border border-red-500/30 text-xs px-3 py-1 rounded-full backdrop-blur font-medium">
+                            Cardiología
+                        </span>
+                        <span class="text-[10px] text-gray-500"><i class="fas fa-hand-pointer mr-1"></i> Desliza</span>
+                    </div>
 
-                                <div                    
-                    class="p-8 bg-gray-900/60 rounded-2xl border border-blue-500/10 glow-effect-blue relative overflow-hidden">
-                                        <div
-                        class="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-2xl"></div>
-                                        <h3 class="text-2xl font-bold mb-2 text-white">Sistemas & Automatización</h3>
-                                        <p class="text-blue-400 font-medium text-sm mb-6">por FlowData Pro</p>
-                                        <div class="space-y-6">
-                                                <div class="bg-gray-950/40 p-4 rounded-xl border border-gray-800">
-                                                        <h4 class="font-bold text-white mb-1 text-base">Automatización
-                                de Procesos</h4>
-                                                        <p class="text-gray-400 text-xs font-light leading-relaxed">
-                                Sistemas y scripts a medida para
-                                                                que tu negocio gestione leads y tareas repetitivas de
-                                forma autónoma.</p>
-                                                    </div>
-                                                <div class="bg-gray-950/40 p-4 rounded-xl border border-gray-800">
-                                                        <h4 class="font-bold text-white mb-1 text-base">Integración de
-                                Datos</h4>
-                                                        <p class="text-gray-400 text-xs font-light leading-relaxed">
-                                Conectamos tus herramientas
-                                                                comerciales con flujos de información seguros y reportes
-                                automatizados.</p>
-                                                    </div>
-                                            </div>
-                                    </div>
-                            </div>
-                    </div>
-            </section>
+                    <div class="flex gap-3 overflow-x-auto no-scrollbar py-2 mb-4 scroll-smooth snap-x snap-mandatory">
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MARTINEZ/Martinez_01.png" alt="Cardiología Dr Martinez 1"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MARTINEZ/Martinez_02.png" alt="Cardiología Dr Martinez 2"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MARTINEZ/Martinez_03.png" alt="Cardiología Dr Martinez 3"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MARTINEZ/Martinez_04.png" alt="Cardiología Dr Martinez 4"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MARTINEZ/Martinez_05.png" alt="Cardiología Dr Martinez 5"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MARTINEZ/Martinez_06.png" alt="Cardiología Dr Martinez 6"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/MARTINEZ/Martinez_07.png" alt="Cardiología Dr Martinez 7"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
 
-        <section id="metodo" class="py-24 border-t border-gray-900 max-w-6xl mx-auto px-4">
-                <div class="text-center mb-16">
-                        <h2 class="text-3xl font-bold mb-4 tracking-tight">Estructura de Trabajo Transparente</h2>
-                        <p class="text-gray-400 font-light max-w-xl mx-auto">Así es como transformamos procesos
-                complejos en
-                                sistemas sencillos y rentables.</p>
-                    </div>
+                <div>
+                    <h3 class="text-base font-bold text-white mb-1">Estrategia Cardiología</h3>
+                    <p class="text-xs text-gray-400">Estructura de alto impacto dedicada a la salud cardiovascular.</p>
+                </div>
+            </div>
 
-                <div class="grid sm:grid-cols-3 gap-8 relative">
-                        <div class="p-6 bg-gray-900/40 border border-gray-800 rounded-xl">
-                                <div class="text-3xl font-black text-purple-500/40 mb-4">01</div>
-                                <h4 class="text-lg font-bold text-white mb-2">Auditoría de Procesos</h4>
-                                <p class="text-gray-400 text-xs font-light leading-relaxed">Analizamos tu flujo
-                    comercial actual e
-                                        identificamos qué tareas te quitan tiempo o dónde estás perdiendo prospectos.
+            <!-- 5. RUTH - ODONTOLOGÍA / ORTODONCIA -->
+            <div
+                class="bg-[#12131A] border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span
+                            class="bg-cyan-900/80 text-cyan-200 border border-cyan-500/30 text-xs px-3 py-1 rounded-full backdrop-blur font-medium">
+                            Odontología & Ortodoncia
+                        </span>
+                        <span class="text-[10px] text-gray-500"><i class="fas fa-hand-pointer mr-1"></i> Desliza</span>
+                    </div>
+
+                    <div class="flex gap-3 overflow-x-auto no-scrollbar py-2 mb-4 scroll-smooth snap-x snap-mandatory">
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/RUTH/ortodoncia_01.png" alt="Ortodoncia Ruth 1"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/RUTH/ortodoncia_02.png" alt="Ortodoncia Ruth 2"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/RUTH/ortodoncia_03.png" alt="Ortodoncia Ruth 3"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/RUTH/ortodoncia_04.png" alt="Ortodoncia Ruth 4"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/RUTH/ortodoncia_05.png" alt="Ortodoncia Ruth 5"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-base font-bold text-white mb-1">Estética Dental & Ortodoncia</h3>
+                    <p class="text-xs text-gray-400">Contenido enfocado en la transformación de sonrisas.</p>
+                </div>
+            </div>
+
+            <!-- 6. VEMONT - CLÍNICA PRIVADA -->
+            <div
+                class="bg-[#12131A] border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span
+                            class="bg-emerald-900/80 text-emerald-200 border border-emerald-500/30 text-xs px-3 py-1 rounded-full backdrop-blur font-medium">
+                            Clínica Privada
+                        </span>
+                        <span class="text-[10px] text-gray-500"><i class="fas fa-hand-pointer mr-1"></i> Desliza</span>
+                    </div>
+
+                    <div class="flex gap-3 overflow-x-auto no-scrollbar py-2 mb-4 scroll-smooth snap-x snap-mandatory">
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/VEMONT/13-agosto_01.png" alt="Clínica Vemont 1"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/VEMONT/13-agosto_02.png" alt="Clínica Vemont 2"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/VEMONT/13-agosto_03.png" alt="Clínica Vemont 3"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/VEMONT/13-agosto_04.png" alt="Clínica Vemont 4"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/VEMONT/13-agosto_05.png" alt="Clínica Vemont 5"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-base font-bold text-white mb-1">Branding para Clínica Privada</h3>
+                    <p class="text-xs text-gray-400">Posicionamiento institucional y servicios médicos integrales.</p>
+                </div>
+            </div>
+
+            <!-- 7. PCCS - VETERINARIA -->
+            <div
+                class="bg-[#12131A] border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span
+                            class="bg-amber-900/80 text-amber-200 border border-amber-500/30 text-xs px-3 py-1 rounded-full backdrop-blur font-medium">
+                            Atención Veterinaria
+                        </span>
+                        <span class="text-[10px] text-gray-500"><i class="fas fa-hand-pointer mr-1"></i> Desliza</span>
+                    </div>
+
+                    <div class="flex gap-3 overflow-x-auto no-scrollbar py-2 mb-4 scroll-smooth snap-x snap-mandatory">
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/PCCS/17-agosto_01.png" alt="Veterinaria PCCS 1"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/PCCS/17-agosto_02.png" alt="Veterinaria PCCS 2"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/PCCS/17-agosto_03.png" alt="Veterinaria PCCS 3"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/PCCS/17-agosto_04.png" alt="Veterinaria PCCS 4"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="min-w-[190px] h-[240px] rounded-lg overflow-hidden border border-gray-800 snap-center flex-shrink-0 shadow-lg">
+                            <img src="img/PCCS/17-agosto_05.png" alt="Veterinaria PCCS 5"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-base font-bold text-white mb-1">Salud & Cuidado Animal</h3>
+                    <p class="text-xs text-gray-400">Contenido educativo e institucional para servicios veterinarios de
+                        excelencia.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOLUCIONES -->
+    <section id="soluciones" class="w-full max-w-5xl mx-auto px-6 py-16 text-center border-t border-gray-950">
+        <h2 class="text-3xl font-bold text-white mb-12 tracking-tight">
+            Soluciones visuales y diseño estratégico para un alcance sin límites
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
+            <div
+                class="bg-[#12131A] border border-gray-800 p-8 rounded-2xl flex flex-col gap-4 hover:border-purple-500/30 transition-all duration-300 hover:scale-[1.01] glow-effect">
+                <h3 class="text-xl font-bold text-white">Estrategia de Marca & Branding</h3>
+                <ul class="space-y-3 text-gray-400 font-light">
+                    <li class="flex items-center gap-2">✨ Identidad visual & Logotipos de alta gama</li>
+                    <li class="flex items-center gap-2">🎯 Posicionamiento internacional de marca</li>
+                    <li class="flex items-center gap-2">📂 Arquitectura de contenidos & feed</li>
+                </ul>
+            </div>
+
+            <div
+                class="bg-[#12131A] border border-gray-800 p-8 rounded-2xl flex flex-col gap-4 hover:border-purple-500/30 transition-all duration-300 hover:scale-[1.01] glow-pink">
+                <h3 class="text-xl font-bold text-white">Experiencia Web & Conversión (Funnels)</h3>
+                <ul class="space-y-3 text-gray-400 font-light">
+                    <li class="flex items-center gap-2">🚀 Landing pages rápidas e internacionales</li>
+                    <li class="flex items-center gap-2">✍️ Redacción persuasiva adaptada (Copywriting)</li>
+                    <li class="flex items-center gap-2">📱 Diseño totalmente adaptable y responsive</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor -->
+    <section id="ventajas" class="w-full max-w-5xl mx-auto px-6 py-16 border-t border-gray-900">
+        <h2 class="text-3xl font-bold text-white mb-12 text-center tracking-tight">
+            ¿Por qué los profesionales confían en Wen Atelier Studio?
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-[#12131A] border border-gray-800 p-8 rounded-2xl flex flex-col gap-4">
+                <div class="text-purple-400 text-3xl"><i class="fas fa-clock"></i></div>
+                <h3 class="text-xl font-bold text-white">Ahorro de Tiempo Total</h3>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">
+                    Tú te enfocas en tus pacientes y consultas; nosotras nos encargamos de toda la producción visual,
+                    planificación y gestión de tu presencia.
                 </p>
-                            </div>
-                        <div class="p-6 bg-gray-900/40 border border-gray-800 rounded-xl">
-                                <div class="text-3xl font-black text-blue-500/40 mb-4">02</div>
-                                <h4 class="text-lg font-bold text-white mb-2">Desarrollo a Medida</h4>
-                                <p class="text-gray-400 text-xs font-light leading-relaxed">Wen Atelier estructura la
-                    experiencia e
-                                        identidad visual, mientras FlowData Pro programa la lógica y automatizaciones en
-                    Python.</p>
-                            </div>
-                        <div class="p-6 bg-gray-900/40 border border-gray-800 rounded-xl">
-                                <div class="text-3xl font-black text-teal-500/40 mb-4">03</div>
-                                <h4 class="text-lg font-bold text-white mb-2">Despliegue y Control</h4>
-                                <p class="text-gray-400 text-xs font-light leading-relaxed">Lanzamos el sistema a
-                    entornos de producción
-                                        estables y seguros, entregándote métricas claras sobre tu nuevo rendimiento.</p>
-                            </div>
-                    </div>
-            </section>
+            </div>
 
-        <section id="contacto" class="py-24 border-t border-gray-900 bg-gray-900/10 text-center max-w-4xl mx-auto px-4">
-                <div class="bg-gray-900 p-10 rounded-2xl border border-gray-800 shadow-2xl relative overflow-hidden">
-                        <div                
-                class="absolute -top-10 -left-10 w-40 h-40 bg-gradient-to-br from-purple-500/10 to-blue-500/10 rounded-full blur-3xl">
-                            </div>
+            <div class="bg-[#12131A] border border-gray-800 p-8 rounded-2xl flex flex-col gap-4 glow-effect">
+                <div class="text-pink-400 text-3xl"><i class="fas fa-gem"></i></div>
+                <h3 class="text-xl font-bold text-white">Estética de Alto Nivel</h3>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">
+                    Diseños médicos y corporativos limpios, modernos y perfectamente alineados a la jerarquía de
+                    consultorios y marcas de alta gama.
+                </p>
+            </div>
 
-                        <h2 class="text-3xl font-black mb-4 text-white tracking-tight">¿Tienes un proyecto en mente?
+            <div class="bg-[#12131A] border border-gray-800 p-8 rounded-2xl flex flex-col gap-4">
+                <div class="text-indigo-400 text-3xl"><i class="fas fa-language"></i></div>
+                <h3 class="text-xl font-bold text-white">Visión Bilingüe y Global</h3>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">
+                    Estrategia visual y de contenido en inglés y español para conectar con la comunidad en Florida y
+                    captar audiencias globales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prueba Social / Testimonios -->
+    <section id="testimonios" class="py-20 bg-gray-900/30 border-t border-b border-gray-900">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center tracking-tight">
+                Recomendado por doctores y especialistas
             </h2>
-                        <p class="text-gray-400 font-light max-w-xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
-                                Cuéntame tu idea. Hablemos directamente para diseñar una strategy a tu medida o
-                automatizar la
-                                infraestructura comercial de tu negocio.
-                            </p>
 
-                        <a
-                href="https://wa.me/50764371369?text=%C2%A1Hola%20Wen%20Atelier!%20Vengo%20de%20la%20web%20y%20me%20gustar%C3%ADa%20solicitar%20una%20auditor%C3%ADa%20para%20mi%20negocio."
-                                target="_blank" rel="noopener noreferrer"                
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 bg-[#12131A] rounded-2xl border border-gray-800 relative">
+                    <p class="text-gray-300 text-sm font-light italic leading-relaxed mb-6">
+                        "La calidad del diseño de Wen Atelier Studio cambió por completo la percepción de mi
+                        consultorio. Pasamos de subir imágenes imprecisas a proyectar una clínica estética de primer
+                        nivel que atrae pacientes internacionales."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-purple-600/30 border border-purple-500/50 flex items-center justify-center font-bold text-purple-300 text-xs">
+                            DR
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Especialista Médico</h4>
+                            <p class="text-xs text-gray-500">Atención a Pacientes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-[#12131A] rounded-2xl border border-gray-800 relative">
+                    <p class="text-gray-300 text-sm font-light italic leading-relaxed mb-6">
+                        "Liberar nuestro tiempo del manejo de comunicación visual nos permitió atender más consultas
+                        veterinarias diarias. La presentación de servicios es sumamente profesional y capta clientes
+                        familiares exigentes."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-pink-600/30 border border-pink-500/50 flex items-center justify-center font-bold text-pink-300 text-xs">
+                            MV
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Centro Veterinario</h4>
+                            <p class="text-xs text-gray-500">Salud Animal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METODO -->
+    <section id="metodo" class="py-24 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Estructura de Trabajo Transparente</h2>
+            <p class="text-gray-400 font-light max-w-xl mx-auto">Así es como transformamos la presencia de tu clínica o
+                marca de manera organizada y visualmente impecable.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-8 relative">
+            <div class="p-6 bg-gray-900/40 border border-gray-800 rounded-xl">
+                <div class="text-3xl font-black text-purple-500/40 mb-4">01</div>
+                <h4 class="text-lg font-bold text-white mb-2">Auditoría de Marca</h4>
+                <p class="text-gray-400 text-xs font-light leading-relaxed">Analizamos tu comunicación visual actual e
+                    identificamos oportunidades de oro para posicionar tu servicio.</p>
+            </div>
+            <div class="p-6 bg-[#12131A] border border-purple-500/20 rounded-xl glow-effect">
+                <div class="text-3xl font-black text-pink-500/40 mb-4">02</div>
+                <h4 class="text-lg font-bold text-white mb-2">Diseño y Estrategia</h4>
+                <p class="text-gray-400 text-xs font-light leading-relaxed">Estructuramos la identidad de marca, piezas
+                    de contenido y páginas de conversión con estándares premium e internacionales.</p>
+            </div>
+            <div class="p-6 bg-gray-900/40 border border-gray-800 rounded-xl">
+                <div class="text-3xl font-black text-indigo-500/40 mb-4">03</div>
+                <h4 class="text-lg font-bold text-white mb-2">Lanzamiento & Crecimiento</h4>
+                <p class="text-gray-400 text-xs font-light leading-relaxed">Publicamos tus activos digitales listos para
+                    conectar con pacientes exigentes y clientes de alto valor de manera continua.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Final -->
+    <section id="contacto" class="py-24 text-center max-w-4xl mx-auto px-4">
+        <div
+            class="bg-gradient-to-b from-gray-900 to-gray-950 p-10 rounded-2xl border border-gray-800 shadow-2xl relative overflow-hidden">
+            <div
+                class="absolute -top-10 -left-10 w-40 h-40 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-full blur-3xl">
+            </div>
+            <h2 class="text-3xl font-black mb-4 text-white tracking-tight">¿Listo para elevar la imagen de tu clínica o
+                negocio?</h2>
+            <p class="text-gray-400 font-light max-w-xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+                Solicita una muestra de rediseño de prueba para tu consultorio o especialidad médica sin ningún
+                compromiso, desde cualquier parte del mundo.
+            </p>
+
+            <a href="https://wa.me/50764371369?text=Hola%20chicas%2C%20vi%20su%20web%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20para%20el%20dise%C3%B1o%20de%20mi%20cl%C3%ADnica%2Fveterinaria%20en%20Florida."
+                target="_blank" rel="noopener noreferrer"
                 class="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-green-500 hover:from-emerald-500 hover:to-green-400 text-white font-bold py-4 px-8 rounded-xl transition text-base tracking-wide shadow-lg shadow-emerald-900/30 hover:scale-[1.02] transform duration-200">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                       
-                    <path                        
-                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-3.56c1.64.975 3.524 1.489 5.437 1.491 5.438 0 9.86-4.426 9.863-9.864.001-2.634-1.025-5.111-2.887-6.974-1.861-1.863-4.337-2.89-6.971-2.891-5.441 0-9.866 4.426-9.869 9.865-.001 1.951.511 3.856 1.485 5.508L1.517 21.5l3.85-1.012zm11.366-6.31c-.302-.151-1.785-.882-2.057-.981-.273-.099-.471-.148-.67.15-.197.297-.767.98-.94 1.177-.174.199-.347.223-.649.072-.302-.151-1.274-.469-2.427-1.496-.897-.8-1.502-1.787-1.679-2.088-.176-.302-.019-.465.132-.614.136-.134.302-.351.453-.527.151-.176.201-.302.302-.503.101-.201.05-.377-.025-.526-.075-.149-.67-1.613-.918-2.21-.242-.58-.487-.501-.67-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.785-.73 2.034-1.434.248-.704.248-1.309.173-1.434-.075-.125-.272-.199-.57-.351z" />
-                                   
-                </svg>
-                                Iniciar Auditoría por WhatsApp
-                            </a>
-                    </div>
-            </section>
+                <i class="fab fa-whatsapp text-2xl"></i>
+                Solicitar Rediseño por WhatsApp
+            </a>
+        </div>
+    </section>
 
-        <footer class="text-center py-12 text-gray-600 text-xs border-t border-gray-900 tracking-wider">
-                &copy; 2026 Wen Atelier & FlowData Pro. Todos los derechos reservados.
-            </footer>
+    <!-- Footer -->
+    <footer class="text-center py-12 text-gray-600 text-xs border-t border-gray-900 tracking-wider">
+        &copy; 2026 Wen Atelier Studio. Todos los derechos reservados.
+    </footer>
 
-        <a
-        href="https://wa.me/50764371369?text=%C2%A1Hola%20Wen%20Atelier!%20Vengo%20de%20la%20web%20y%20me%20gustar%C3%ADa%20solicitar%20una%20auditor%C3%ADa%20para%20mi%20negocio."
-                target="_blank" rel="noopener noreferrer"        
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/50764371369?text=Hola%20chicas%2C%20vi%20su%20web%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20para%20el%20dise%C3%B1o%20de%20mi%20cl%C3%ADnica%2Fveterinaria%20en%20Florida."
+        target="_blank" rel="noopener noreferrer"
         class="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center group"
-                title="Hablar por WhatsApp">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                       
-            <path                
+        title="Contactar por WhatsApp">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
                 d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-3.56c1.64.975 3.524 1.489 5.437 1.491 5.438 0 9.86-4.426 9.863-9.864.001-2.634-1.025-5.111-2.887-6.974-1.861-1.863-4.337-2.89-6.971-2.891-5.441 0-9.866 4.426-9.869 9.865-.001 1.951.511 3.856 1.485 5.508L1.517 21.5l3.85-1.012zm11.366-6.31c-.302-.151-1.785-.882-2.057-.981-.273-.099-.471-.148-.67.15-.197.297-.767.98-.94 1.177-.174.199-.347.223-.649.072-.302-.151-1.274-.469-2.427-1.496-.897-.8-1.502-1.787-1.679-2.088-.176-.302-.019-.465.132-.614.136-.134.302-.351.453-.527.151-.176.201-.302.302-.503.101-.201.05-.377-.025-.526-.075-.149-.67-1.613-.918-2.21-.242-.58-.487-.501-.67-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.785-.73 2.034-1.434.248-.704.248-1.309.173-1.434-.075-.125-.272-.199-.57-.351z" />
-                   
         </svg>
-                <span            
+        <span
             class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 ease-in text-xs font-semibold whitespace-nowrap text-white">
-                        ¿Hablamos?
-                    </span>
-            </a>
+            ¿Hablamos?
+        </span>
+    </a>
 
 </body>
 
